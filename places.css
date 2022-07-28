@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(68, 68, 68);
+}
+#page-logo a {
+  color: rgb(28, 169, 182);
+}
+#container {
+  position: static;
+}
+#container nav a:hover {
+  background-color: rgb(146, 217, 224);
+}
+#container li a {
+  color: rgb(28, 169, 182);
+}
+main ul {
+  width: 1200px;
+  margin: 0 auto 50px auto;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+}
+main li {
+  display: flex;
+  background-color: rgb(184, 202, 219);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+li:nth-of-type(3) {
+  grid-column: 1 / span 2;
+}
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+.actions {
+  text-align: right;
+}
+.actions a {
+  text-decoration: none;
+  padding: 6px;
+  color: rgb(28, 169, 182);
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 5px;
+}
+.actions a:hover {
+  background-color: rgb(146, 217, 224);
+}
